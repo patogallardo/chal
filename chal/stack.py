@@ -13,6 +13,9 @@ class Stack():
         self.n_layers = n_layers
         self.n_materials = n_materials
         self.n_freq = n_freq
+        self.epsilons = epsilons
+        self.ds = ds
+        self.freqs = freqs
 
         n_ls = [matrices.n(e_param) for e_param in epsilons]
         self.n_ls = n_ls
