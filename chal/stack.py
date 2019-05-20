@@ -41,6 +41,6 @@ class Stack():
         prod = np.matmul(prod, Dls[-1], out=prod)
         self.Ms = prod
         R = np.abs(self.Ms[:, 1, 0]/self.Ms[:, 0, 0])**2
-        T = self.n_ls[-1]/self.n_ls[0] * np.abs(1./self.Ms[:, 0, 0])**2
+        T = np.abs(self.n_ls[-1]/self.n_ls[0] * np.abs(1./self.Ms[:, 0, 0])**2)
         self.R = R
         self.T = T
